@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff8e1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(255, 183, 77, 0.16);
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+h1 {
+    color: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 80px;
+    top: 3px;
+    line-height: 80px;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+    text-shadow: 1px 1px 2px #fffde7;
+}
+header li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 4vw;
+}
+header a {
+    color: #ff9800;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+header a:hover {
+    text-decoration: underline;
+    color: #e65100;
+}
+footer {
+    background-color: #ff9800;
+    color: #ffffff;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+}
+.home {
+    background-color: #ffe0b2;
+    color: #4e342e;
+    min-height: 60vh;
+    background-image:url("images/canteen-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.home h2 {
+    font-size: 48px;
+    color: #ff9800;
+    text-shadow: 2px 2px 8px #fffde7;
+    margin-bottom: 16px;
+}
+.home p {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #fffde7;
+}
+.destinations {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+.destinations h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff9800;
+}
+.destination-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destination-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.10);
+    overflow: hidden;
+    text-align: center;
+    max-width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255, 152, 0, 0.14);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #fb8c00;
+}
+
+.destination-item p {
+    font-size: 15px;
+    color: #7b5e2e;
+    padding: 0 10px 16px;
+}
+.slogan {
+    background-image: linear-gradient(to right, rgba(255, 183, 77, 0.88), rgba(255, 138, 101, 0.78)), url("images/canteen-env-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    border-radius: 10px;
+    margin: 35px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(255, 183, 77, 0.18);
+}
+.slogan h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(255, 152, 0, 0.45);
+}
+.slogan-content {
+    font-size: 19px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(255, 152, 0, 0.16);
+    padding: 10px;
+}
+.contact {
+    background-color: #f9f9f9;
+    padding: 48px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 152, 0, 0.09);
+    margin: 20px auto 40px;
+    max-width: 600px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffb74d;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fffde7;
+    box-shadow: inset 0 1px 3px rgba(255, 152, 0, 0.05);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.23);
+    outline: none;
+}
+
+.contact button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+    background-color: #e65100;
+    transform: scale(1.05);
+}
+
+/* 响应式优化 */
+@media (max-width: 900px) {
+    .destination-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slogan-content > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
