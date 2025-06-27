@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园食堂展示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>校园食堂</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">食堂简介</a></li>
+                <li><a href="#menu">菜品展示</a></li>
+                <li><a href="#environment">环境展示</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 食堂简介 -->
+        <section id="home" class="home">
+            <h2>欢迎来到校园食堂</h2>
+            <p>美味、安全、便捷的校园饮食新体验</p>
+            <p>我们为您提供丰富多样的菜品，温馨整洁的用餐环境，是您学习生活的坚实后盾。</p>
+        </section>
+        <!-- 菜品展示 -->
+        <section id="menu" class="destinations">
+            <h2>菜品展示</h2>
+            <div class="destination-list">
+                <div class="destination-item">
+                    <img src="images/dish1.jpg" alt="红烧排骨">
+                    <h3>红烧排骨</h3>
+                    <p>经典家常，香嫩入味<br>￥18/份</p>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dish2.jpg" alt="宫保鸡丁">
+                    <h3>宫保鸡丁</h3>
+                    <p>微辣爽口，配料丰富<br>￥15/份</p>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dish3.jpg" alt="番茄炒蛋">
+                    <h3>番茄炒蛋</h3>
+                    <p>酸甜可口，营养均衡<br>￥10/份</p>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dish4.jpg" alt="素炒时蔬">
+                    <h3>素炒时蔬</h3>
+                    <p>新鲜健康，绿色美味<br>￥8/份</p>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dish5.jpg" alt="米饭套餐">
+                    <h3>米饭套餐</h3>
+                    <p>米香四溢，搭配多样<br>￥12/份</p>
+                </div>
+            </div>
+        </section>
+        <!-- 环境展示 -->
+        <section id="environment" class="slogan">
+            <h2>食堂环境</h2>
+            <div class="slogan-content">
+                <p>宽敞明亮的就餐大厅，干净整洁的餐桌，温馨舒适的用餐氛围。我们每天进行多次清洁消毒，确保您的饮食安全。</p>
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+                    <img src="images/env1.jpg" alt="食堂大厅" style="width:180px; border-radius:10px;">
+                    <img src="images/env2.jpg" alt="窗口区" style="width:180px; border-radius:10px;">
+                    <img src="images/env3.jpg" alt="消毒区" style="width:180px; border-radius:10px;">
+                </div>
+            </div>
+        </section>
+        <!-- 联系我们 -->
+        <section id="contact" class="contact">
+            <h2>联系我们</h2>
+            <form action="#" method="post">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">电子邮件:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 校园食堂. 版权所有。</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
